@@ -4,7 +4,6 @@ import generarJWT from '../helpers/generarJWT.js';
 import { emailRegistro, emailOlvidePassword } from '../helpers/email.js';
 
 const registrar = async (req, res) => {
-	// Evitar registros duplicados
 	const { email } = req.body;
 	const existeUsuario = await Usuario.findOne({ email });
 

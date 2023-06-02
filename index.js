@@ -2,9 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import conectarDB from './config/db.js';
-import usuarioRoutes from '../backend/routes/usuarioRoutes.js';
-import proyectosRoutes from '../backend/routes/proyectoRoutes.js';
-import tareaRoutes from '../backend/routes/TareaRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
+import proyectosRoutes from '.routes/proyectoRoutes.js';
+import tareaRoutes from './routes/TareaRoutes.js';
 
 const app = express();
 app.use(express.json());

@@ -1,4 +1,5 @@
 import express from 'express';
+const router = express.Router();
 import {
 	registrar,
 	autenticar,
@@ -9,8 +10,6 @@ import {
 	perfil,
 } from '../controllers/usuarioController.js';
 import checkAuth from '../middleware/checkAuth.js';
-
-const router = express.Router();
 
 // Creacion registro y confirmacion de usuario.
 
