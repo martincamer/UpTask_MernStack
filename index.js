@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import conectarDB from './config/db.js';
 import usuarioRoutes from './routes/usuarioRoutes.js';
-import proyectosRoutes from '.routes/proyectoRoutes.js';
+import proyectosRoutes from './routes/proyectoRoutes.js';
 import tareaRoutes from './routes/TareaRoutes.js';
 
 const app = express();
